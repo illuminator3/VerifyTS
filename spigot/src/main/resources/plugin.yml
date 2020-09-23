@@ -1,0 +1,9 @@
+name: 'VerifyTS'
+version: '1.0'
+author: 'illuminator3'
+main: 'net.blockrain.verifyts.spigot.core.SpigotImpl'
+
+commands:
+  teamspeak:
+    aliases:
+      - ts
