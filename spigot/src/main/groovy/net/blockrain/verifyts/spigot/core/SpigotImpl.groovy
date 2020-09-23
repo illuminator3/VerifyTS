@@ -39,7 +39,9 @@ class SpigotImpl
                 "                        |___/                 \n"
 
         o.splitEachLine "\n", {
-            println it
+            it.each {s ->
+                println s
+            }
         }
 
         Shared.startup()
