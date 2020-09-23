@@ -23,7 +23,9 @@ version '1.0'
 
 repositories {
     mavenCentral()
-    mavenLocal()
+
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 dependencies {
@@ -31,7 +33,7 @@ dependencies {
     compile project(':shared')
     compile project(':settings')
 
-    implementation 'org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT'
+    implementation 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
     implementation 'com.github.theholywaffle:teamspeak3-api:1.2.0'
 
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
