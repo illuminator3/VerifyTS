@@ -4,7 +4,7 @@
 
 ## Installation
 
-To install **VerifyTS** you'll first have to build the jar container, follow the steps described in [Building](#Building). If that's done all you have to do is to put the generated jar into your plugins folder and write (or use an existing) implementation of the API (example code can be found [here](#API Example Code)).
+To install **VerifyTS** you'll first have to build the jar container, follow the steps described in [Building](#Building). If that's done all you have to do is to put the generated jar into your plugins folder and write (or use an existing) implementation of the API (example code can be found in the API Example Code section).
 
 ## Building
 
