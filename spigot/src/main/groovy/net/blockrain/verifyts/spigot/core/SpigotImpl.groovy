@@ -38,7 +38,7 @@ class SpigotImpl
                 "                         __/ |                \n" +
                 "                        |___/                 \n"
 
-        o.split("\n").each {
+        o.splitEachLine "\n", {
             println it
         }
 
