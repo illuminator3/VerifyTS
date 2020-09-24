@@ -39,7 +39,7 @@ class SpigotImpl
                 "                        |___/                 \n"
 
         o.splitEachLine "\n", {
-            it.each {s ->
+            it.each { s ->
                 println s
             }
         }
