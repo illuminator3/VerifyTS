@@ -92,6 +92,25 @@ class TeamSpeakCommand
                 api.addClientToServerGroup rank, api.getClientByUId(clid).getDatabaseId()
             } catch (Throwable ignored) {}
 
+            def headURL = URL.newInstance "https://cravatar.eu/helmhead/${player.getName()}/32.png"
+            def stream = headURL.openStream()
+
+            def inp = BufferedInputStream.newInstance stream
+            def out = ByteArrayOutputStream.newInstance()
+            def buf = new byte[1024]
+            def n = 0
+
+            while (-1 != (n = inp.read(buf)))
+                out.write buf, 0, n
+
+            out.close()
+            inp.close()
+
+            def response = out.toByteArray()
+            def id = api.uploadIconDirect(response)
+
+            api.addClientPermission api.getClientByUId(clid).getDatabaseId(), "i_icon_id", id.intValue(), false
+
             player.sendMessage "$prefix §aDu wurdest erfolgreich verifiziert!"
 
             player.playSound player.getLocation(), Sound.LEVEL_UP, 1f, 1f
