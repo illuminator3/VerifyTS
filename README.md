@@ -45,7 +45,7 @@ maven { url 'https://jitpack.io' }
 Find the version [here](https://jitpack.io/#illuminator3/VerifyTS) and add the dependency:
 
 ```groovy
-implementation 'com.github.illuminator3:PacketTransfer:<version>'
+implementation 'com.github.illuminator3:VerifyTS:<version>'
 ```
 
 ## API Usage
